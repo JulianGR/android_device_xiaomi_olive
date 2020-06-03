@@ -1,5 +1,4 @@
-This is my own development fork, so if you are going to build it, try at your own risk. I am NOT RESPONSIBLE for any bricked device.
-
+This is my own development fork, so if you are going to build it, try at your own risk. I am not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please do some research if you have any concerns about features included in this ROM before flashing it! 
 
 Captions:
 + :white_check_mark: : requirement met
@@ -7,6 +6,17 @@ Captions:
 + :zap: : work in progress
 
 Charter from [https://github.com/LineageOS/charter/blob/master/device-support-requirements.md]
+
+---
+* Lock screen only works when installing LOLZ kernel
+* Annoying popup everytime when rebooting
+* Apps crashing during boot
+* No Mobile Data (4G/ 3G/ 2G)
+* USB not working
+* Some Android hidden codes not working (see https://www.xda-developers.com/codes-hidden-android/)
+* when installing an app, any app in which you happen to be, crashes (but the app is installed)
+---
+
 ### Table of Contents
 
 * [Attaining exceptions](#attaining-exceptions)
@@ -98,42 +108,42 @@ Charter from [https://github.com/LineageOS/charter/blob/master/device-support-re
 
 ## Wi-Fi
 
-* All devices with Wi-Fi supported in their stock OS MUST support Wi-Fi.
-* All devices with Wi-Fi MUST report same MAC address as on stock OS.
-* All devices with Wi-Fi hotspot capabilities MUST support Wi-Fi tethering.
+* :white_check_mark: All devices with Wi-Fi supported in their stock OS MUST support Wi-Fi.
+* :white_check_mark: All devices with Wi-Fi MUST report same MAC address as on stock OS.
+* :red_circle: NO TETHRERING because Mobile Data isn't working. All devices with Wi-Fi hotspot capabilities MUST support Wi-Fi tethering.
 
 ## USB
 
-* All devices with a USB port MUST support file access via MTP.
-* All devices with USB tethering supported on their stock OS MUST support USB tethering.
-* All devices with a USB port & Data SHOULD support USB tethering.
+* :red_circle: All devices with a USB port MUST support file access via MTP.
+* :red_circle: All devices with USB tethering supported on their stock OS MUST support USB tethering.
+* :red_circle: All devices with a USB port & Data SHOULD support USB tethering.
 
 ## GPS
 
-* All devices with GPS supported in their stock OS MUST support GPS.
+* :red_circle: All devices with GPS supported in their stock OS MUST support GPS.
 
 ## Bluetooth
 
-* All devices with Bluetooth supported in their stock OS MUST support Bluetooth.
-* All devices with Bluetooth MUST report same MAC address as on stock OS.
-* All devices with Bluetooth SHOULD support Bluetooth tethering.
+* :white_check_mark: All devices with Bluetooth supported in their stock OS MUST support Bluetooth.
+* :white_check_mark: All devices with Bluetooth MUST report same MAC address as on stock OS.
+* :white_check_mark: All devices with Bluetooth SHOULD support Bluetooth tethering.
 * All devices with support for Qualcomm® aptX™, aptX™ HD, or any future variant of aptX™, in stock (non-beta releases) OS SHOULD support those variant of aptX™.
 * All devices without support for Qualcomm® aptX™, aptX™ HD, or any future variant of aptX™ in stock (non-beta releases) OS MUST NOT support those variants of aptX™.
 
 ## Camera
 
-* All devices with Camera supported in their stock OS MUST support Camera, in both front facing and rear camera configurations.
-* All devices with Dual (or more) Rear Cameras SHOULD support all rear cameras.
-* All devices with Dual (or more) Front Facing Cameras SHOULD support all front cameras.
+* :white_check_mark: All devices with Camera supported in their stock OS MUST support Camera, in both front facing and rear camera configurations.
+* :white_check_mark: All devices with Dual (or more) Rear Cameras SHOULD support all rear cameras.
+* :white_check_mark: All devices with Dual (or more) Front Facing Cameras SHOULD support all front cameras.
 * All Camera HAL versions accessible with the device's Camera HAL MUST comply with the Camera and Video Recording requirements.
 
 ## Video Recording
 
-* All devices with Video Recording supported in their stock OS MUST support Video Recording, in both front facing and rear camera configurations.
+* :white_check_mark: All devices with Video Recording supported in their stock OS MUST support Video Recording, in both front facing and rear camera configurations.
 
 ## Codecs
 
-* All devices with hardware encoding/decoding support in their stock OS MUST support hardware encoding/decoding for all non-proprietary codecs supported by their stock OS.
+* :white_check_mark: All devices with hardware encoding/decoding support in their stock OS MUST support hardware encoding/decoding for all non-proprietary codecs supported by their stock OS.
 
 ## Display
 
@@ -143,38 +153,30 @@ Charter from [https://github.com/LineageOS/charter/blob/master/device-support-re
 * All devices that support a USB-out display in their stock OS SHOULD support this display output (eg. MHL/Miracast/OTG).
 * All devices that support HDR10 playback in their stock OS SHOULD support HDR10 playback.
 
-## NFC
-
-* All devices with NFC supported in their stock OS MUST support NFC.
-
 ## Fingerprint Sensor
 
-* All devices with a Fingerprint Sensor MUST support the Fingerprint Sensor if the stock OS supports it with Marshmallow or higher Android versions.
-* All devices with a Fingerprint Sensor SHOULD support the Fingerprint Sensor if the stock OS supports it for all other Android versions.
+* :red_circle: All devices with a Fingerprint Sensor MUST support the Fingerprint Sensor if the stock OS supports it with Marshmallow or higher Android versions.
+* :red_circle: All devices with a Fingerprint Sensor SHOULD support the Fingerprint Sensor if the stock OS supports it for all other Android versions.
 
 ## IR
 
-* All devices with an IR blaster SHOULD support IR blaster.
+* :white_check_mark: All devices with an IR blaster SHOULD support IR blaster.
 
 ## Accelerometer
 
-* All devices with an accelerometer MUST support the accelerometer.
-
-## Gyroscope
-
-* All devices with a gyroscope MUST support the gyroscope.
+* :white_check_mark: All devices with an accelerometer MUST support the accelerometer.
 
 ## Proximity
 
-* All devices with a proximity sensor MUST support the proximity sensor.
+* :white_check_mark: All devices with a proximity sensor MUST support the proximity sensor.
 
 ## Light
 
-* All devices with a light sensor MUST support the light sensor.
+* :white_check_mark: All devices with a light sensor MUST support the light sensor.
 
 ## Other Sensors
 
-* All other sensors supported by a device’s stock OS SHOULD be supported.
+* :red_circle: All other sensors supported by a device’s stock OS SHOULD be supported.
 
 ## Accessories
 
@@ -185,6 +187,16 @@ Charter from [https://github.com/LineageOS/charter/blob/master/device-support-re
 __Hardware deviations are defined as exemptions granted for hardware requirements above that worked in stock, but do not work in LineageOS.__
 
 * All hardware deviations from stock MUST be reported on the Wiki page for the device, with a user understandable justification.
+
+~~
+## Gyroscope (device doesn't support Gyroscope)
+
+* All devices with a gyroscope MUST support the gyroscope.
+
+## NFC (device doesn't support NFC)
+
+* All devices with NFC supported in their stock OS MUST support NFC.
+~~
 
 # Software support
 
@@ -228,7 +240,7 @@ __Hardware deviations are defined as exemptions granted for hardware requirement
 
 ## SELinux status
 
-* All devices MUST be configured for SELinux Enforcing.
+* :red_circle: All devices MUST be configured for SELinux Enforcing.
 
 ## Verity
 
@@ -252,7 +264,7 @@ __Hardware deviations are defined as exemptions granted for hardware requirement
 
 ## Root (su)
 
-* All devices MUST NOT ship with su included.
+* :white_check_mark: All devices MUST NOT ship with su included.
 * All devices shipping LineageOS 16.0 or earlier MUST support su installation via LineageOS provided ‘Extras’ download.
 
 ## Non-PIE Blobs
